@@ -10,3 +10,4 @@ typedef struct
 
 Vector *create_vector(int size);
 Vector *insert(Vector* vec,int item, unsigned int index);
+Vector *copy_vector(Vector *vec);

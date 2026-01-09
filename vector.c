@@ -29,3 +29,17 @@ Vector *insert(Vector *vec, int item, unsigned int index)
     return vec;
 }
 
+Vector *copy_vector(Vector *vec)
+{
+    Vector *new_vec = vec;
+    new_vec->size = vec->size;
+    new_vec->capacity = vec->capacity;
+
+    int j = 0;
+    for (int i = 0; i < vec->size; i++)
+    {
+            new_vec->data[i] = vec->data[i];
+    }
+
+    return new_vec;
+}
